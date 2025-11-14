@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <servlet>
+        <servlet-name>random</servlet-name>
+        <jsp-file>/random.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>random</servlet-name>
+        <url-pattern>/random</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>inputtest</servlet-name>
+        <jsp-file>/input.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputtest</servlet-name>
+        <url-pattern>/inputtest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registtest</servlet-name>
+        <servlet-class>RegistTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registtest</servlet-name>
+        <url-pattern>/registtest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registresult</servlet-name>
+        <jsp-file>/registresult.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registresult</servlet-name>
+        <url-pattern>/registresult</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>proinput</servlet-name>
+        <jsp-file>/proinput.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>proinput</servlet-name>
+        <url-pattern>/proinputtest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>proregistservlet</servlet-name>
+        <servlet-class>ProRegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>proregistservlet</servlet-name>
+        <url-pattern>/proregistservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>proregist</servlet-name>
+        <jsp-file>/proregist.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>proregist</servlet-name>
+        <url-pattern>/proregist</url-pattern>
+    </servlet-mapping>
+</web-app>
