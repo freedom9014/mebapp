@@ -5,7 +5,7 @@
     <h1>登録されたユーザー</h1>
     <table border="1">
         <tr><th>ユーザー名</th><th>パスワード</th></tr>
-        <tr><td>${name}</td><td>${pass}</td></tr>
+        <tr><td>${prof.name}</td><td>${prof.pass}</td></tr>
     </table>
     </body>
 </html>
