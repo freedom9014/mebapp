@@ -62,4 +62,31 @@
         <servlet-name>proregist</servlet-name>
         <url-pattern>/proregist</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>inputcomic</servlet-name>
+        <jsp-file>/inputcomic.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputcomic</servlet-name>
+        <url-pattern>/inputcomic</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registcomicservlet</servlet-name>
+        <servlet-class>RegistComicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registcomicservlet</servlet-name>
+        <url-pattern>/registcomicservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registcomic</servlet-name>
+        <jsp-file>/registcomic.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registcomic</servlet-name>
+        <url-pattern>/registcomic</url-pattern>
+    </servlet-mapping>
 </web-app>
