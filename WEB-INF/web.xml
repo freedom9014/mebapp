@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<web-app>
+
+<web-app    xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" 
+            version="6.0" metadata-complete="true">
     <servlet>
         <servlet-name>random</servlet-name>
         <jsp-file>/random.jsp</jsp-file>
@@ -88,5 +92,150 @@
     <servlet-mapping>
         <servlet-name>registcomic</servlet-name>
         <url-pattern>/registcomic</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>inputdiary</servlet-name>
+        <jsp-file>/inputdiary.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputdiary</servlet-name>
+        <url-pattern>/inputdiary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>diaryservlet</servlet-name>
+        <servlet-class>DiaryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>diaryservlet</servlet-name>
+        <url-pattern>/diaryservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>resultdiary</servlet-name>
+        <jsp-file>/resultdiary.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resultdiary</servlet-name>
+        <url-pattern>/resultdiary</url-pattern>
+    </servlet-mapping>
+    
+
+
+
+     <servlet>
+        <servlet-name>inputst</servlet-name>
+        <jsp-file>/inputst.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputst</servlet-name>
+        <url-pattern>/inputst</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>studentservlet</servlet-name>
+        <servlet-class>StudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>studentservlet</servlet-name>
+        <url-pattern>/studentservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registst</servlet-name>
+        <jsp-file>/registst.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registst</servlet-name>
+        <url-pattern>/registst</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>SessionStartServlet</servlet-name>
+        <servlet-class>ttc.SessionStartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sessionshow</servlet-name>
+        <jsp-file>/sessionshow.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionEndServlet</servlet-name>
+        <servlet-class>ttc.SessionEndServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SessionStartServlet</servlet-name>
+        <url-pattern>/sessionstart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sessionshow</servlet-name>
+        <url-pattern>/sessionshow</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionEndServlet</servlet-name>
+        <url-pattern>/sessionend</url-pattern>
+    </servlet-mapping>
+
+    
+
+
+    <servlet>
+        <servlet-name>BookSessionStart</servlet-name>
+        <servlet-class>BookSessionStart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>bookshow</servlet-name>
+        <jsp-file>/bookshow.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>BookSessionEnd</servlet-name>
+        <servlet-class>BookSessionEnd</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookSessionStart</servlet-name>
+        <url-pattern>/bookstart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bookshow</servlet-name>
+        <url-pattern>/bookshow</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookSessionEnd</servlet-name>
+        <url-pattern>/bookend</url-pattern>
+    </servlet-mapping>
+
+
+
+    <context-param>
+        <param-name>date_format</param-name>
+        <param-value>yyyy/M/d(E) k:m:s</param-value>
+    </context-param>
+    <context-param>
+        <param-name>encode_type</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>paramjsp</servlet-name>
+        <jsp-file>/param.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>paramjsp</servlet-name>
+        <url-pattern>/paramjsp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>inputparam</servlet-name>
+        <jsp-file>/inputparam.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputparam</servlet-name>
+        <url-pattern>/inputparam</url-pattern>
     </servlet-mapping>
 </web-app>
