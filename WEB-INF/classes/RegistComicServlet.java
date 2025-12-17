@@ -1,6 +1,9 @@
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import comic.ComicProperty;
+import ip.UserProfile;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -22,10 +25,14 @@ public class RegistComicServlet extends HttpServlet{
             cp.setComicTitle(t);
             cp.setComicAuthor(a);
 
+            RegistComicDB.insert(cp);
+
+            List<ComicProperty> comicList = RegistComicDB.selectComicList();
+
             //HttpServletRequestの実装クラスのインスタンスに
             //ip.UserProfileのインスタンスを登録する
             //この時の登録名profが式言語で使用する識別子になる
-            req.setAttribute("cpro",cp);
+            req.setAttribute("comiclist",comicList);
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("registcomic");
 
