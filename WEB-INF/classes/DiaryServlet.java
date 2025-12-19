@@ -1,6 +1,5 @@
 import java.io.IOException;
 
-import comic.ComicProperty;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServlet;

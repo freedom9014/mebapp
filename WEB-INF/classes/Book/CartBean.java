@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class CartBean implements Serializable{
-    private ArrayList books = new ArrayList();
+    private ArrayList<BookBean> books = new ArrayList<BookBean>();
 
     public void addBook(BookBean book){
         books.add(book);

@@ -95,7 +95,8 @@ public class RegistComicDB {
         }catch(Exception e){
             e.printStackTrace();
         }finally{
-            return comiclist;
+            
         }
+        return comiclist;
     }
 }

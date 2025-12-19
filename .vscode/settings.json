@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "WEB-INF/classes"
+    ],
+    "java.project.referencedLibraries": [
+        "/Users/yk/tomcat10/lib/servlet-api.jar"
+    ]
+}

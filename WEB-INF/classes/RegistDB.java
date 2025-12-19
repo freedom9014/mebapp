@@ -117,8 +117,9 @@ public class RegistDB {
         }catch(Exception e){
             e.printStackTrace();
         }finally{
-            return userlist;
+
         }
+        return userlist;
     }
 }
     

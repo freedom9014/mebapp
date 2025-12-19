@@ -1,9 +1,7 @@
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import comic.ComicProperty;
-import ip.UserProfile;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

@@ -1,8 +1,6 @@
 package ttc;
 
 import java.io.IOException;
-import java.net.http.HttpResponse;
-import java.rmi.ServerException;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
