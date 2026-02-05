@@ -4,6 +4,37 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" 
             version="6.0" metadata-complete="true">
+       <filter>
+        <filter-name>logincheckfilter</filter-name>
+        <filter-class>LoginCheckFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>logincheckfilter</filter-name>
+        <url-pattern>/productinput</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>logincheckfilter</filter-name>
+        <url-pattern>/productorder</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>authenticatefilter</filter-name>
+        <filter-class>AuthenticateFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>authenticatefilter</filter-name>
+        <url-pattern>/productinput</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>authenticatefilter</filter-name>
+        <url-pattern>/productorder</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    
     <servlet>
         <servlet-name>random</servlet-name>
         <jsp-file>/random.jsp</jsp-file>
@@ -244,36 +275,7 @@
 
 
 
-    <filter>
-        <filter-name>logincheckfilter</filter-name>
-        <filter-class>LoginCheckFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>logincheckfilter</filter-name>
-        <url-pattern>/productinput</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>logincheckfilter</filter-name>
-        <url-pattern>/productorder</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-    </filter-mapping>
-
-    <filter>
-        <filter-name>authenticatefilter</filter-name>
-        <filter-class>AuthenticateFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>authenticatefilter</filter-name>
-        <url-pattern>/productinput</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>authenticatefilter</filter-name>
-        <url-pattern>/productorder</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-    </filter-mapping>
-
+ 
     <servlet>
         <servlet-name>productinput</servlet-name>
         <jsp-file>/productinput.jsp</jsp-file>
@@ -308,5 +310,17 @@
     <servlet-mapping>
         <servlet-name>authenticate</servlet-name>
         <url-pattern>/authenticate</url-pattern>
+    </servlet-mapping>
+
+
+
+
+     <servlet>
+        <servlet-name>EmpQueryServlet</servlet-name>
+        <servlet-class>EmpQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmpQueryServlet</servlet-name>
+        <url-pattern>/EmpQueryServle</url-pattern>
     </servlet-mapping>
 </web-app>

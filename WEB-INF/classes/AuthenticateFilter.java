@@ -28,10 +28,10 @@ public class AuthenticateFilter implements Filter{
             HttpServletRequest hreq = (HttpServletRequest)req;
 
             String servletPath = hreq.getServletPath();
-
+            System.out.println(servletPath);
             hreq.setAttribute("target",servletPath);
 
-            RequestDispatcher disp = req.getRequestDispatcher("/orderlogin");
+            RequestDispatcher disp = hreq.getRequestDispatcher("/orderlogin");
             disp.forward(req,res);
         
         }else{
