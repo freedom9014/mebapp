@@ -1,5 +1,5 @@
 import java.sql.Connection;
-import java.sql.DatabaseMetaData;
+//import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -20,15 +20,15 @@ public class CursorTest {
 
             cn.setAutoCommit(false);
 
-            DatabaseMetaData dbMeta = cn.getMetaData();
+            //DatabaseMetaData dbMeta = cn.getMetaData();
 
-            String dbName = dbMeta.getDatabaseProductName();
+            //String dbName = dbMeta.getDatabaseProductName();
 
-            String[] types = {"TABLE"};
+            //String[] types = {"TABLE"};
 
-            ResultSet dbInfo = dbMeta.getTables(null,)
+            //ResultSet dbInfo = dbMeta.getTables(null,"TABLE",null,null);
 
-            /*String sql = "SELECT empno,ename FROM emp";
+            String sql = "SELECT empno,ename FROM emp";
 
             st = cn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 
@@ -37,7 +37,7 @@ public class CursorTest {
             ResultSetMetaData rsMeta = rs.getMetaData();
 
             
-            int columnCount = rsMeta.getColumnCount();*/
+            int columnCount = rsMeta.getColumnCount();
 
             while(rs.next()){
                 for(int i = 1; i <= columnCount; i++){
